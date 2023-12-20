@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./12.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  .car {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(81, 255, 0);
+    position: absolute;
+    z-index: 3;
+    left: -200px;
+    top: 700px;
+    animation: AnimationCar 10s forwards;
+    border-radius: 0px 50px 0px 0px ;
+  }
+  
+  .wheel {
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+  }
+  .left {
+    left: 25px;
+    top: 70px;
+  }
+  
+  .right {
+    right: 25px;
+    top: 70px;
+  }
+  
+  @keyframes AnimationCar {
+    from {
+      left: 0px;
+    }
+  
+    to {
+      left: calc(100% - 250px);
+      
+    }
+  }
+  
+  @keyframes go {
+    from {
+      left: 0px;
+    }
+  
+    to {
+      left: calc(100% - 250px);
+    }
+  }
+  
+  
